@@ -1,48 +1,191 @@
 # MBH-FreelanceHouse-
-Baktear Creations
-Photo Editing � Photo Restoration � AI Translation � Graphic Design
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Baktear Creations � Photo Editing, Design & AI Translation</title>
+  <meta name="description" content="Photo editing, restoration, graphic design, and AI-powered translations. Contact via WhatsApp or email." />
 
-Services
-Photo Editing & Retouching � portraits, social media, e-commerce
-Photo Restoration � old, torn or faded photos (depends on condition)
-AI-Powered Translation � accurate machine-enhanced translations
-Graphic Design � logos, banners, posters, cards, and custom work
-Pricing
-Passport-size photo
-$5
-Social Media Photo Makeup (IG/Facebook)
-$10
-Photo Restoration (starts from)
-$20
-Translation (per page)
-$10
-Logo � Simple
-$200
-Premium Design
-$500
-Advanced Design
-$1500
-Card Design
-$55
-Poster Design
-$45
-Contact Me
-All client communication is handled via WhatsApp or Email.
+  <style>
+    :root {
+      --accent: #ff6600;
+      --bg: #f7f7f8;
+      --card: #fff;
+      --muted: #6b6b6b;
+      --maxw: 980px;
+    }
+    *{ box-sizing:border-box;}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg); color:#222; margin:0; padding:0 16px 60px; -webkit-font-smoothing:antialiased;
+    }
 
-Your name
-Full name
-Service
-e.g., Photo restoration
-Message
-Tell me about your photo or request...
-Message on WhatsApp
-Open Email Portal
-Contact Info
-?? WhatsApp: +8801816710775
-?? Email: mdbaktearhasan775@gmail.com
-Why choose me?
-Fast turnaround
-High-quality edits and restoration
-AI-enhanced translations (reviewed by me)
-Professional designs for businesses & creators
-� 2025 Baktear Creations � MD Baktear Hasan
+    header{text-align:center;padding:40px 10px 20px;}
+    header h1{margin:0;font-size:32px;letter-spacing:0.2px;}
+    header p{margin:8px 0 0;color:var(--muted);}
+
+    .container{max-width:var(--maxw);margin:18px auto;}
+    .card{
+      background:var(--card); border-radius:12px; padding:18px;
+      box-shadow:0 6px 18px rgba(25,25,25,0.06); margin-bottom:16px;
+    }
+
+    .grid{display:grid; grid-template-columns:1fr; gap:14px;}
+    @media(min-width:900px){.grid{grid-template-columns:1fr 380px;}}
+
+    h2{margin:0 0 10px;color:#222;font-size:18px;border-bottom:3px solid var(--accent);display:inline-block;padding-bottom:6px;}
+    ul{padding-left:16px;margin:8px 0 0;color:var(--muted);}
+    li{margin:6px 0;}
+    .prices li{
+      display:flex; justify-content:space-between; padding:10px;
+      border-radius:8px; background:#fcfcfc; margin-bottom:8px; border-left:4px solid var(--accent);
+    }
+
+    label{display:block;margin-bottom:6px;font-weight:600;font-size:13px;color:#333;}
+    input[type="text"], input[type="email"], textarea{
+      width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6e6e6; font-size:14px; background:#fff;
+    }
+    textarea{min-height:120px; resize:vertical;}
+    .row{display:flex; gap:10px;}
+    .row .col{flex:1;}
+
+    .actions{display:flex;gap:8px;align-items:center;margin-top:10px;}
+    button{
+      background:var(--accent); color:#fff; border:0; padding:10px 14px; border-radius:10px; cursor:pointer; font-weight:600;
+      box-shadow:0 6px 14px rgba(255,102,0,0.12);
+    }
+    .btn-ghost{
+      background:transparent; color:var(--accent); border:1px solid #ffd9bf;
+    }
+
+    .contact-info{font-size:15px; color:var(--muted); margin-top:6px;}
+    .whatsapp{display:inline-flex; align-items:center; gap:8px; font-weight:700; color:#0a8754;}
+    .email-link{color:#1a73e8; font-weight:700;}
+
+    footer{text-align:center;color:var(--muted);margin-top:18px;font-size:13px;}
+
+    .toast{position:fixed;right:18px;bottom:18px;background:#111;color:#fff;padding:12px 16px;border-radius:10px;box-shadow:0 20px 40px rgba(0,0,0,0.3);display:none;}
+    .toast.show{display:block;animation:slideUp .35s ease;}
+    @keyframes slideUp{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+    .muted{color:var(--muted);font-size:13px;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Baktear Creations</h1>
+  <p>Photo Editing � Photo Restoration � AI Translation � Graphic Design</p>
+</header>
+
+<main class="container">
+  <div class="grid">
+    <section class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Photo Editing & Retouching � portraits, social media, e-commerce</li>
+        <li>Photo Restoration � old, torn or faded photos (depends on condition)</li>
+        <li>AI-Powered Translation � accurate machine-enhanced translations</li>
+        <li>Graphic Design � logos, banners, posters, cards, and custom work</li>
+      </ul>
+
+      <h2 style="margin-top:16px">Pricing</h2>
+      <ul class="prices">
+        <li><span>Passport-size photo</span><strong>$5</strong></li>
+        <li><span>Social Media Photo Makeup (IG/Facebook)</span><strong>$10</strong></li>
+        <li><span>Photo Restoration (starts from)</span><strong>$20</strong></li>
+        <li><span>Translation (per page)</span><strong>$10</strong></li>
+        <li><span>Logo � Simple</span><strong>$200</strong></li>
+        <li><span>Premium Design</span><strong>$500</strong></li>
+        <li><span>Advanced Design</span><strong>$1500</strong></li>
+        <li><span>Card Design</span><strong>$55</strong></li>
+        <li><span>Poster Design</span><strong>$45</strong></li>
+      </ul>
+
+      <h2>Contact Me</h2>
+      <p class="muted">
+        All client communication is handled via <strong>WhatsApp</strong> or <strong>Email</strong>.
+      </p>
+
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="Full name"/>
+
+        <label for="service" style="margin-top:8px;">Service</label>
+        <input id="service" type="text" placeholder="e.g., Photo restoration"/>
+
+        <label for="message" style="margin-top:8px;">Message</label>
+        <textarea id="message" placeholder="Tell me about your photo or request..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="sendWhatsApp">Message on WhatsApp</button>
+        <button id="sendEmail" class="btn-ghost">Open Email Portal</button>
+      </div>
+    </section>
+
+    <aside>
+      <div class="card">
+        <h2>Contact Info</h2>
+        <div class="contact-info">
+          ?? WhatsApp: <a class="whatsapp" href="https://wa.me/8801816710775" target="_blank">+8801816710775</a><br>
+          ?? Email: <a class="email-link" href="mailto:mdbaktearhasan775@gmail.com">mdbaktearhasan775@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Why choose me?</h2>
+        <ul>
+          <li>Fast turnaround</li>
+          <li>High-quality edits and restoration</li>
+          <li>AI-enhanced translations (reviewed by me)</li>
+          <li>Professional designs for businesses & creators</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  � 2025 Baktear Creations � MD Baktear Hasan
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script>
+  const waBtn = document.getElementById('sendWhatsApp');
+  const emailBtn = document.getElementById('sendEmail');
+  const toast = document.getElementById('toast');
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(()=> toast.classList.remove('show'), 4200);
+  }
+
+  waBtn.addEventListener('click', ()=>{
+    const name = encodeURIComponent(document.getElementById('name').value || 'Anonymous');
+    const service = encodeURIComponent(document.getElementById('service').value || '');
+    const message = encodeURIComponent(document.getElementById('message').value || '');
+    const phone = '8801816710775';
+    const text = `Hello, my name is ${name}. Service: ${service}. Message: ${message}`;
+    const url = `https://wa.me/${phone}?text=${text}`;
+    window.open(url,'_blank');
+    showToast('Opening WhatsApp...');
+  });
+
+  emailBtn.addEventListener('click', ()=>{
+    const name = encodeURIComponent(document.getElementById('name').value || 'Anonymous');
+    const service = encodeURIComponent(document.getElementById('service').value || '');
+    const message = encodeURIComponent(document.getElementById('message').value || '');
+    const subject = encodeURIComponent('Service Request from ' + name);
+    const body = encodeURIComponent(`Name: ${name}\nService: ${service}\nMessage: ${message}`);
+    const mailto = `mailto:mdbaktearhasan775@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailto;
+    showToast('Opening email portal...');
+  });
+</script>
+
+</body>
+</html>
