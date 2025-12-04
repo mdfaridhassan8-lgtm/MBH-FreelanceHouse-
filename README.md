@@ -1,5 +1,4 @@
-# MBH-FreelanceHouse-
-<!doctype html>
+# MBH-FreelanceHouse
 <html lang="en">
 <head>
   <meta charset="utf-8" />
